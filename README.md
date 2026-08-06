@@ -97,12 +97,14 @@ cp .env.example .env        # 填 DEEPSEEK_API_KEY 和 VISION_API_KEY（智谱�
 
 仓库附带 `vision` 技能——把识图路由机制、运维要点、能力边界打包成 Claude Code 技能，遇到识图任务自动加载（触发词：识图、看图片、图片识别等）。
 
-**方式一：插件市场一键安装（推荐）**
+**方式一：插件市场一键安装（推荐，已实测）**
 
 ```bash
-claude plugin marketplace add Cicicrr/deepseek-vision-gateway
+claude plugin marketplace add https://github.com/Cicicrr/deepseek-vision-gateway
 claude plugin install deepseek-vision-gateway@deepseek-vision-gateway
 ```
+
+> macOS 若报 `Error in the HTTP2 framing layer`（git 拉取失败），先执行 `git config --global http.version HTTP/1.1` 再重试。
 
 **方式二：手动复制**
 
