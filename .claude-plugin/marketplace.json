@@ -1,0 +1,14 @@
+{
+  "name": "deepseek-vision-gateway",
+  "owner": {
+    "name": "Cicicrr",
+    "github": "Cicicrr"
+  },
+  "plugins": [
+    {
+      "name": "deepseek-vision-gateway",
+      "description": "DeepSeek + 智谱 GLM-4V-Flash 免费识图网关，附带 vision 技能（识图机制与运维说明）",
+      "source": "."
+    }
+  ]
+}

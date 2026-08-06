@@ -93,16 +93,25 @@ cp .env.example .env        # 填 DEEPSEEK_API_KEY 和 VISION_API_KEY（智谱�
 
 > ⚠️ 注意：`KeepAlive=true` 下杀掉进程会被 launchd 秒拉起。**改完代码重启必须用 `launchctl kickstart -k gui/$(id -u)/com.llm.gateway`**，单独 `./stop.sh` 会把旧实例拉起、新代码不生效。
 
-## Claude Code 技能
+## Claude Code 技能（两种安装方式）
 
-仓库内附带 `skills/vision/SKILL.md`——把识图路由机制、运维要点、能力边界打包成 Claude Code 技能：
+仓库附带 `vision` 技能——把识图路由机制、运维要点、能力边界打包成 Claude Code 技能，遇到识图任务自动加载（触发词：识图、看图片、图片识别等）。
+
+**方式一：插件市场一键安装（推荐）**
+
+```bash
+claude plugin marketplace add Cicicrr/deepseek-vision-gateway
+claude plugin install deepseek-vision-gateway@deepseek-vision-gateway
+```
+
+**方式二：手动复制**
 
 ```bash
 mkdir -p ~/.claude/skills/vision
-cp skills/vision/SKILL.md ~/.claude/skills/vision/SKILL.md
+cp .claude/skills/vision/SKILL.md ~/.claude/skills/vision/SKILL.md
 ```
 
-重启 Claude 会话后，遇到识图相关任务会自动加载（触发词：识图、看图片、图片识别等）。
+重启 Claude 会话后生效。
 
 ## License
 

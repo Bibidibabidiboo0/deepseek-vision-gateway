@@ -1,0 +1,8 @@
+{
+  "name": "deepseek-vision-gateway",
+  "description": "Claude Code 免费识图能力：vision 技能（网关路由机制、关键坑与运维说明）",
+  "author": {
+    "name": "Cicicrr"
+  },
+  "version": "1.0.0"
+}
