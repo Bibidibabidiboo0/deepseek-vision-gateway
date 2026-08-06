@@ -12,6 +12,8 @@ DeepSeek 没有视觉能力（收到图片只显示 `[Unsupported Image...` 占�
 
 ## 快速上手（约 3 分钟）
 
+**需要准备**：已安装 Claude Code（`npm install -g @anthropic-ai/claude-code`）；DeepSeek API key（[platform.deepseek.com](https://platform.deepseek.com)）；智谱 API key（[open.bigmodel.cn](https://open.bigmodel.cn)，glm-4v-flash 免费申请）。
+
 **① 启动网关**
 
 ```bash
